@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Action RPG Resources/World/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Action RPG Resources/World/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://Action RPG Resources/World/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Action RPG Resources/Enemies/Bat.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Action RPG Resources/HealthUI.gd" type="Script" id=8]
+[ext_resource path="res://Action RPG Resources/Control.tscn" type="PackedScene" id=9]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -674,3 +676,8 @@ position = Vector2( 296, 88 )
 
 [node name="Bat4" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 144, 0 )
+
+[node name="HealthUI" parent="." instance=ExtResource( 9 )]
+script = ExtResource( 8 )
+
+[editable path="HealthUI"]
