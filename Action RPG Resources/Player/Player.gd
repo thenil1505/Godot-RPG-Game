@@ -61,6 +61,7 @@ func move_state(delta):
 	move()
 	
 	if Input.is_action_just_pressed("roll"):
+		PlayerStats.max
 		state = ROLL
 	
 	if Input.is_action_just_pressed("attack"):
